@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img{
+            width: 400px;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+            transition: all 3s;
+        }
+        img:hover{
+            -webkit-filter: none;
+        }
+        .img1{
+            /* 
+                滤镜属性 
+                grayscale：设置灰度，1是百分之百，0是百分之0            
+             */
+             -webkit-filter: grayscale(1);
+             
+        }
+        .img2{
+            /*
+                brightness：亮度，默认值是1, 
+             */
+            -webkit-filter: brightness(2);
+        }
+        .img3{
+            /* 
+                褐色属性
+                sepia：1百分之百褐色，正常为0
+             */
+             -webkit-filter: sepia(0.5);
+        }
+        .img4{
+            /* 模糊度
+                blur：单位像素
+             */
+             -webkit-filter: blur(50px);
+        }
+        .img5{
+            /* 对比度
+                contrast：对比度，正常为1，如果调成0，就没有任何对比度，变为灰色
+             */
+             -webkit-filter: contrast(0.3);
+        }
+        .img6{
+            /* 饱和度
+                saturate：正常为1
+             */
+             -webkit-filter: saturate(0.3);
+        }
+        .img7{
+            /* 胶片底色效果
+             */
+             -webkit-filter: invert(1);
+        }
+        .img8{
+            /* 色相旋转
+             */
+             -webkit-filter: hue-rotate(50deg);
+        }
+        .img9{
+            -webkit-filter: blur(10px) brightness(10) grayscale(1);
+            transform: all 10s;
+        }
+        .img9:hover{
+            -webkit-filter: blur(0px) brightness(1) grayscale(1);
+        }
+    </style>
+</head>
+<body>
+    <img src="img/img.jpg" alt="kobe" class="img1">
+    <img src="img/img.jpg" alt="kobe" class="img2">
+    <img src="img/img.jpg" alt="kobe" class="img3">
+    <img src="img/img.jpg" alt="kobe" class="img4">
+    <img src="img/img.jpg" alt="kobe" class="img5">
+    <img src="img/img.jpg" alt="kobe" class="img6">
+    <img src="img/img.jpg" alt="kobe" class="img7">
+    <img src="img/img.jpg" alt="kobe" class="img8">
+    <img src="img/img.jpg" alt="kobe" class="img9">
+</body>
+</html>
